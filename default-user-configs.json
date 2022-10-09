@@ -1,9 +1,9 @@
 {
     "chainEndpoints": {
-        "ethereum": {"url": "https://rpc.ankr.com/eth", "rateLimitPerSecond": 200},
+        "ethereum": {"url": "https://rpc.ankr.com/eth", "rateLimitPerSecond": 2},
         "binanceSmartChain": {"url": "https://rpc.ankr.com/bsc", "rateLimitPerSecond": 200},
-        "fantom": {"url": "https://rpc.ankr.com/fantom", "rateLimitPerSecond": 200},
-        "polygon": {"url": "https://rpc.ankr.com/polygon", "rateLimitPerSecond": 200},
-        "avaxC": {"url": "https://rpc.ankr.com/avalanche", "rateLimitPerSecond": 200}
+        "fantom": {"url": "https://rpc.ankr.com/fantom", "rateLimitPerSecond": 2},
+        "polygon": {"url": "https://rpc.ankr.com/polygon", "rateLimitPerSecond": 2},
+        "avaxC": {"url": "https://rpc.ankr.com/avalanche", "rateLimitPerSecond": 2}
     }
 }
