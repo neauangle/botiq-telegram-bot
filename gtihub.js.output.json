@@ -1,0 +1,53 @@
+{
+    "ownerDetails": {
+        "platform": "github",
+        "id": "neauangle",
+        "name": "Neauangle",
+        "login": "neauangle",
+        "email": "neauangle@protonmail.com",
+        "profileUrl": "https://github.com/neauangle",
+        "avatarImageUrl": "https://avatars.githubusercontent.com/u/29006839?v=4",
+        "blogUrl": ""
+    },
+    "projectDetails": {
+        "url": "https://github.com/neauangle/botiq-telegram-bot",
+        "name": "telegram-buy-bot",
+        "fullName": "Telegram Buy Bot",
+        "description": "Bot that This bot posts to channels it's joined to whenever a buy is made of any of the tokens that particular channel is subscribed to. Supports EVM-compatible blockchains.",
+        "tags": [
+            "crypto",
+            "bot",
+            "buy bot",
+            "telegram",
+            "defi",
+            "dapp",
+            "web3.0",
+            "evm",
+            "ethereum",
+            "binance",
+            "fantom",
+            "avalanche"
+        ],
+        "authors": [
+            "Neauangle"
+        ],
+        "evmAddress": "0xeF6102cf13Bf075BD5A61BBa1ec7E509899f7152",
+        "license": "GPLv3",
+        "createdAt": "2022-09-30T07:51:03Z",
+        "stargazerUrl": "https://github.com/neauangle/botiq-telegram-bot/stargazers",
+        "stargazerCount": 0,
+        "platform": "github",
+        "ownerId": "neauangle",
+        "latestReleaseUrl": "https://github.com/neauangle/botiq-telegram-bot/releases/tag/v0.0.4",
+        "latestReleaseTag": "v0.0.4",
+        "latestReleaseName": "v0.0.4",
+        "latestReleaseCreatedAt": "2022-10-09T15:44:15Z",
+        "latestReleasesSourceCodeUrl": "https://github.com/neauangle/botiq-telegram-bot/archive/refs/tags/v0.0.4.zip",
+        "latestReleaseAssets": [],
+        "configTemplateString": "{\n    \"aggregateInputConfigs\": [\n        {\n            \"name\": \"chainEndpoints\",\n            \"label\": \"JSON RPC Endpoints\",\n            \"textUnderName\": \"To support a particular blockchain, you need to define an endpoint for it. This config is a map from a chain's name to its endpoint URL and rate limit. Chain names must match one of the keys from <a href=\\\"https://github.com/neauangle/botiq/blob/master/ethers-base.js\\\">botiq/ethers-base.js</a> and the URLs must have any access token embedded (<a href=\\\"https://www.ankr.com/rpc/\\\">Ankr</a> provides free community endpoint URLs, some of which I've used here as defaults).\",\n            \"type\": \"dictionary\",\n            \"visibilityKeys\": [\"2\"],\n            \"keyParameterSet\": {\n                \"type\": \"text\",\n                \"placeholder\": \"Chain Name\"\n            },\n            \"parameterSets\": [\n                {\"type\": \"url\", \"key\": \"url\", \"placeholder\": \"URL\"},\n                {\"type\": \"number\", \"key\": \"rateLimitPerSecond\", \"placeholder\": \"Rate Limit Per Second\", \"attributeInjection\": \"min=\\\"1\\\" max=\\\"10000\\\"\"}\n            ]\n        },\n        {\n            \"name\": \"telegramAccessToken\",\n            \"textUnderName\": \"This is the password that the @BotFather gives you when you register a bot via Telegram.\",\n            \"type\": \"inputs\",\n            \"parameterSets\": [{\n                \"type\": \"text\",\n                \"placeholder\": \"Access Token\"\n            }]\n        }\n    ]\n}",
+        "defaultUserConfigsString": "{\n    \"chainEndpoints\": {\n        \"ethereum\": {\"url\": \"https://rpc.ankr.com/eth\", \"rateLimitPerSecond\": 2},\n        \"binanceSmartChain\": {\"url\": \"https://rpc.ankr.com/bsc\", \"rateLimitPerSecond\": 200},\n        \"fantom\": {\"url\": \"https://rpc.ankr.com/fantom\", \"rateLimitPerSecond\": 2},\n        \"polygon\": {\"url\": \"https://rpc.ankr.com/polygon\", \"rateLimitPerSecond\": 2},\n        \"avaxC\": {\"url\": \"https://rpc.ankr.com/avalanche\", \"rateLimitPerSecond\": 2}\n    }\n}",
+        "readmeHtml": "<div id=\"file\" class=\"md\" data-path=\"readme.md\"><article class=\"markdown-body entry-content container-lg\" itemprop=\"text\"><p dir=\"auto\"><strong>Telegram Buy Bot</strong></p>\n<p dir=\"auto\">This bot posts to channels it's joined to whenever a buy is made of any of the tokens that particular channel is subscribed to. Supports EVM-compatible blockchains.</p>\n<p dir=\"auto\"><strong>Instructions</strong></p>\n<ol dir=\"auto\">\n<li>Message @BotFather on Telegram to register a bot using <code>/newbot</code> and receive its authentication token. More details on that <a href=\"https://core.telegram.org/bots/features#creating-a-new-bot\" rel=\"nofollow\">here</a>.</li>\n<li>Install <a href=\"https://nodejs.org/en/download/\" rel=\"nofollow\">Node</a> if you haven't already.</li>\n<li>Download this project's source code and place it somewhere nice.</li>\n<li>Generate a user configuration file.</li>\n<li>Download that as user-configs.json and place it just inside the source code folder</li>\n<li>On Windows, double-click \"bot.bat\" just inside the source code folder to start the bot (other platforms coming soon but if you know what node is you can run it yourself at the command line on anything ;))</li>\n<li>Once the bot is running, send it a <code>/help</code> message on Telegram to see the available options.</li>\n</ol>\n<p dir=\"auto\"><strong>Notes</strong></p>\n<ul dir=\"auto\">\n<li>\n<p dir=\"auto\">Using the default free endpoints provided by Ankr will likely result in some buys not being relayed because of occasional rejections from the server.</p>\n</li>\n<li>\n<p dir=\"auto\">To run any kind of bots 24/7 and make it accessible from other computers, you can run it on a Virtual Private Server like <a href=\"https://www.digitalocean.com/solutions/vps-hosting\" rel=\"nofollow\">Digital Ocean</a> for a few dollars a month (you would not need much in the way of computing power).</p>\n</li>\n<li>\n<p dir=\"auto\">This bot is built using <a href=\"github.com/neauangle/botiq\">botiq</a>, a high-level library I created to make developing crypto bots easier- which, in turn, stands on the shoulders of the <a href=\"https://docs.ethers.io/v5/\" rel=\"nofollow\">ethers.js</a> library developed by <a href=\"https://github.com/ricmoo\">ricmoo</a>.</p>\n</li>\n</ul>\n</article></div>",
+        "readmeMd": "**Telegram Buy Bot**\n\nThis bot posts to channels it's joined to whenever a buy is made of any of the tokens that particular channel is subscribed to. Supports EVM-compatible blockchains.\n\n\n**Instructions**\n\n1.  Message @BotFather on Telegram to register a bot using ```/newbot``` and receive its authentication token. More details on that [here](https://core.telegram.org/bots/features#creating-a-new-bot).\n2. Install [Node](https://nodejs.org/en/download/) if you haven't already.\n3. Download this project's source code and place it somewhere nice.\n4. Generate a user configuration file.\n5. Download that as user-configs.json and place it just inside the source code folder\n6. On Windows, double-click \"bot.bat\" just inside the source code folder to start the bot (other platforms coming soon but if you know what node is you can run it yourself at the command line on anything ;))\n7. Once the bot is running, send it a ```/help``` message on Telegram to see the available options.\n\n\n**Notes**\n\n* Using the default free endpoints provided by Ankr will likely result in some buys not being relayed because of occasional rejections from the server.\n\n* To run any kind of bots 24/7 and make it accessible from other computers, you can run it on a Virtual Private Server like [Digital Ocean](https://www.digitalocean.com/solutions/vps-hosting) for a few dollars a month (you would not need much in the way of computing power).\n\n* This bot is built using [botiq](github.com/neauangle/botiq), a high-level library I created to make developing crypto bots easier- which, in turn, stands on the shoulders of the [ethers.js](https://docs.ethers.io/v5/) library developed by [ricmoo](https://github.com/ricmoo).",
+        "readmeTsVector": null
+    }
+}
