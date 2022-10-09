@@ -3,7 +3,7 @@
         {
             "name": "chainEndpoints",
             "label": "JSON RPC Endpoints",
-            "textUnderName": "To support a particular blockchain, you need to define an endpoint for it. This config is a map from a chain's name to its endpoint URL and rate limit. Chain names must match the keys from <a href=\"https://github.com/neauangle/botiq/blob/master/ethers-base.js\">botiq/ethers-base.js</a> and the URLs must have any access token embedded (<a href=\"https://www.ankr.com/rpc/\">Ankr</a> has some free endpoint URLs).",
+            "textUnderName": "To support a particular blockchain, you need to define an endpoint for it. This config is a map from a chain's name to its endpoint URL and rate limit. Chain names must match the keys from <a href=\"https://github.com/neauangle/botiq/blob/master/ethers-base.js\">botiq/ethers-base.js</a> and the URLs must have any access token embedded (<a href=\"https://www.ankr.com/rpc/\">Ankr</a> has some free endpoint URLs, which I've set as some defaults).",
             "type": "dictionary",
             "visibilityKeys": ["2"],
             "keyParameterSet": {
