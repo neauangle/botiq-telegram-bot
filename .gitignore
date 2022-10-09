@@ -2,6 +2,7 @@ cache/
 user-configs.json
 bin/
 dist/
+build-tools/
 
 # Logs
 logs

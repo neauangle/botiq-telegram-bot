@@ -17,7 +17,7 @@
         },
         {
             "name": "telegramAccessToken",
-            "textUnderName": "This is the password that the <a href=\"https://core.telegram.org/bots#6-botfather\">Bot Father</a> gives you when you create a Telegram bot.",
+            "textUnderName": "This is the password that the @BotFather gives you when you register a bot via Telegram.",
             "type": "inputs",
             "parameterSets": [{
                 "type": "text",
