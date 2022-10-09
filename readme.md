@@ -8,10 +8,9 @@ This bot posts to channels it's joined to whenever a buy is made of any of the t
 1.  Message @BotFather on Telegram to register a bot via /newbot and receive its authentication token. More details on that [here](https://core.telegram.org/bots/features#creating-a-new-bot).
 2. Install [Node](https://nodejs.org/en/download/) if you haven't already.
 3. Download this project and extract it somewhere nice.
-4. Generate a user config file.
-5. Download that as user-configs.json and place it just inside the project folder (the same folder where "bot.bat" is located).
-6. On Windows, double-click "bot.bat" to start the bot. Note: if the bot hasn't been run before it will automatically install the dependencies (like [botiq](github.com/neauangle/botiq)) that it needs to run.
-7. Once the bot is running, send it a /help message on Telegram to see the available options.
+4. Generate a user config file and place it inside the project folder (the same folder where "bot.bat" is located).
+5. On Windows, double-click "bot.bat" to start the bot. If the bot hasn't been run before it will automatically install the dependencies (like [botiq](github.com/neauangle/botiq)) that it needs to run.
+6. Once the bot is running, send it a /help message on Telegram to see the available options.
 
 
 **Notes**
