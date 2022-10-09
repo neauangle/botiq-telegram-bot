@@ -1,0 +1,32 @@
+{
+  "name": "telegram-buy-bot",
+  "fullName": "Telegram Buy Bot",
+  "version": "0.1.0",
+  "description": "Bot that posts to a channel whenever a buy is made of any of the tokens the channel is subscribed to. Supports EVM-compatible blockchains.",
+  "evmAddress": "0xeF6102cf13Bf075BD5A61BBa1ec7E509899f7152",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crypto",
+    "bot",
+    "buy bot",
+    "telegram",
+    "defi",
+    "dapp",
+    "web3.0",
+    "evm",
+    "ethereum",
+    "binance",
+    "fantom",
+    "avalanche"
+  ],
+  "author": "Neauangle",
+  "license": "ISC",
+  "dependencies": {
+    "botiq": "^0.1.10",
+    "node-telegram-bot-api": "^0.59.0"
+  }
+}
