@@ -1,7 +1,7 @@
 {
     "chainEndpoints": {
         "ethereum": {"url": "https://rpc.ankr.com/eth", "rateLimitPerSecond": 2},
-        "binanceSmartChain": {"url": "https://rpc.ankr.com/bsc", "rateLimitPerSecond": 200},
+        "binanceSmartChain": {"url": "https://rpc.ankr.com/bsc", "rateLimitPerSecond": 2},
         "fantom": {"url": "https://rpc.ankr.com/fantom", "rateLimitPerSecond": 2},
         "polygon": {"url": "https://rpc.ankr.com/polygon", "rateLimitPerSecond": 2},
         "avaxC": {"url": "https://rpc.ankr.com/avalanche", "rateLimitPerSecond": 2}
