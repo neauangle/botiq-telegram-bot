@@ -2,13 +2,6 @@ import botiq from 'botiq';
 import TelegramBot from 'node-telegram-bot-api';
 import fs from 'fs';
 
-/*
-    TODO    
-    ----
-
-
-*/
-
 const basicMessageOptions = {parse_mode: 'HTML', disable_web_page_preview: true};
 
 const database = (() => {
@@ -434,6 +427,10 @@ const acceptedCommands = [
 ]
 
 
+const configs = JSON.parse(fs.readFileSync('./user-config.json'));
+await run(configs);
+
+
 function textListify(title, array){
     if (array.length){
         return `<b>${title}:</b>\n* ` + array.join('\n* ');
@@ -626,7 +623,3 @@ async function getExtraTrackerDetails(endpoint, tracker, swapDetails){
 
     return extraDetails;
 }
-
-
-const configs = JSON.parse(fs.readFileSync('./user-configs.json'));
-await run(configs);

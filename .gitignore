@@ -1,5 +1,6 @@
 cache/
 user-configs.json
+user-config.json
 bin/
 dist/
 build-tools/
