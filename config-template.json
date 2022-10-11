@@ -3,7 +3,7 @@
         {
             "name": "chainEndpoints",
             "label": "JSON RPC Endpoints",
-            "textUnderName": "For the bot to support a particular blockchain, you need to define an endpoint for it. This config is a map from a chain's name to its endpoint URL and rate limit. Chain names must match one of the keys from <a href=\"https://github.com/neauangle/botiq/blob/master/ethers-base.js\">botiq/ethers-base.js</a> and the URLs must have any access token embedded (<a href=\"https://www.ankr.com/rpc/\">Ankr</a> provides free community endpoint URLs, some of which I've used here as defaults).",
+            "textUnderName": "For the bot to support a particular blockchain, you need to define an endpoint for it. This config is a map from a chain's name to its endpoint URL and rate limit. Chain names must match one of the keys from <a href=\"https://github.com/neauangle/botiq/blob/master/ethers-base.js\">botiq/ethers-base.js</a> and the URLs must have any access token embedded (<a href=\"https://www.ankr.com/rpc/\">ANKR</a> provides free community endpoint URLs, some of which I've used here as defaults).",
             "type": "dictionary",
             "keyParameterSet": {
                 "type": "text",
@@ -11,7 +11,7 @@
             },
             "parameterSets": [
                 {"type": "url", "key": "url", "placeholder": "URL"},
-                {"type": "number", "key": "rateLimitPerSecond", "placeholder": "Rate Limit Per Second", "attributeInjection": "min=\"1\" max=\"10000\""}
+                {"type": "number", "key": "rateLimitPerSecond", "placeholder": "Rate Limit Per Second", "attributes": {"min": 1, "max": 10000}}
             ]
         },
         {
