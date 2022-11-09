@@ -2,8 +2,8 @@
   "name": "telegram-buy-bot",
   "fullName": "Telegram Buy Bot",
   "version": "0.1.0",
-  "description": "Bot that This bot posts to channels it's joined to whenever a buy is made of any of the tokens that particular channel is subscribed to. Supports EVM-compatible blockchains.",
-  "evmAddress": "0xeF6102cf13Bf075BD5A61BBa1ec7E509899f7152",
+  "description": "This telegram bot posts to channels it's joined to whenever a buy is made of any of the tokens that particular channel is subscribed to. Supports EVM-compatible blockchains.",
+  "evmDonateAddress": "0xeF6102cf13Bf075BD5A61BBa1ec7E509899f7152",
   "main": "script.js",
   "type": "module",
   "scripts": {
