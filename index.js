@@ -259,7 +259,7 @@ const acceptedCommands = [
     {
         regex: /^\/list_supported_symbols\s+(\w+)$/,
         usage: `/list_supported_symbols <chain>`,
-        description: `Lists all supported symbol nicknames (e.g. USDC isntead of USDC's contract address) for a chain.`,
+        description: `Lists all supported symbol nicknames (e.g. USDC instead of USDC's contract address) for a chain.`,
         handler: async (endpoints, bot, message, matchResult) => {
             if (!botiq.ethers.chains[matchResult[1]]){
                 bot.sendMessage(message.chat.id, `Unsupported chain "${matchResult[1]}".`, basicMessageOptions);
